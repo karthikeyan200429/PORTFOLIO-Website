@@ -7,8 +7,8 @@ import { UpArrowIcon } from './components/Icons';
 // A new wrapper component for consistent section styling
 const PageSection: React.FC<{ id: string; title: string; children: React.ReactNode }> = ({ id, title, children }) => (
   <section id={id} className="w-full max-w-4xl mx-auto py-2 sm:py-12 px-1 sm:px-6">
-    <div className="rounded-lg sm:rounded-2xl p-1 sm:p-12 sm:bg-gray-800/70 sm:backdrop-blur-lg sm:shadow-2xl sm:border sm:border-white/10">
-      <h2 className="text-xl sm:text-4xl font-bold text-white mb-3 sm:mb-8 border-b border-brand-teal-700 pb-1 sm:pb-3">{title}</h2>
+    <div className="bg-gray-800/70 rounded-2xl shadow-2xl p-12 backdrop-blur-lg border border-white/10">
+      <h2 className="text-4xl font-bold text-white mb-8 border-b-2 border-brand-teal-700 pb-3">{title}</h2>
       {children}
     </div>
   </section>
