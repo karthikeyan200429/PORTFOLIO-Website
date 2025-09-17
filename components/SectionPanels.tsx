@@ -16,18 +16,18 @@ const Pill: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 
 export const ResumePanel: React.FC = () => (
         <div className="space-y-6">
-                <p className="text-base text-gray-400 text-center">You can view my resume below or download a copy for reference.</p>
-                            <div
-                                className="w-full max-w-3xl mx-auto rounded-lg shadow-md border border-gray-800 overflow-y-auto scrollbar-thin scrollbar-thumb-brand-teal-400 scrollbar-track-gray-800"
-                                style={{height: '900px'}}
-                            >
-                            <iframe
-                                src="/Karthikeyan[resume].pdf#toolbar=0"
-                                title="Resume PDF"
-                                className="w-full h-full"
-                                style={{border: 'none'}}
-                            />
-                        </div>
+            <p className="text-base text-gray-400 text-center">You can view my resume below or download a copy for reference.</p>
+            <div
+                className="w-full max-w-xs sm:max-w-3xl mx-auto rounded-md sm:rounded-lg overflow-y-auto scrollbar-thin scrollbar-thumb-brand-teal-400 scrollbar-track-gray-800"
+                style={{height: '700px'}}
+            >
+                <iframe
+                    src="/Karthikeyan[resume].pdf#toolbar=0"
+                    title="Resume PDF"
+                    className="w-full h-full"
+                    style={{border: 'none'}}
+                />
+            </div>
             <p className="text-sm text-gray-500 text-center mt-2">Updated: September 2025</p>
             <p>Download my resume to get a comprehensive overview of my skills, experience, and projects. Please feel free to reach out if you have any questions.</p>
             <a 
